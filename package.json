@@ -1,0 +1,23 @@
+{
+  "name": "simp-win-video-player",
+  "version": "1.0.0",
+  "description": "一个使用Electron.js的Windows视频播放器",
+  "keywords": [
+    "video-player"
+  ],
+  "homepage": "https://github.com/haoqi75/simp-win-video-player#readme",
+  "bugs": {
+    "url": "https://github.com/haoqi75/simp-win-video-player/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/haoqi75/simp-win-video-player.git"
+  },
+  "license": "MIT",
+  "author": "haoqi75",
+  "type": "commonjs",
+  "main": "main.js",
+  "scripts": {
+    "test": "electron ."
+  }
+}
