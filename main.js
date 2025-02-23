@@ -80,12 +80,6 @@ app.whenReady().then(() => {
     });
 });
 
-app.on('window-all-closed', () => {
-    if (process.platform !== 'darwin') {
-        app.quit();
-    }
-});
-
 if (require('electron-squirrel-startup')) {
     app.quit();
   }
@@ -101,3 +95,9 @@ if (require('electron-squirrel-startup')) {
       });
     }
   });
+
+app.on('window-all-closed', () => {
+    if (process.platform !== 'darwin') {
+        app.quit();
+    }
+})
