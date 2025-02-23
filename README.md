@@ -22,4 +22,5 @@
 
 ```bash
 npm install
-npm run test
+npm run test #用来测试
+npm run make #用来打包
