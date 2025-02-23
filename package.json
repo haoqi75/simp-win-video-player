@@ -33,8 +33,10 @@
           "name": "@electron-forge/maker-squirrel",
           "config": {
             "name": "video_player",
-            "authors": "Your Name",
-            "description": "A simple video player built with Electron."
+            "setupIcon": "./icon.ico",
+            "authors": "haoqi75",
+            "description": "A simple video player built with Electron.",
+            "skipUpdateIcon": true
           }
         },
         {
@@ -53,8 +55,7 @@
     "@electron-forge/plugin-auto-unpack-natives": "^7.7.0",
     "@electron-forge/plugin-fuses": "^7.7.0",
     "@electron/fuses": "^1.8.0",
-    "electron": "^34.2.0",
-    "electron-builder": "^25.1.8"
+    "electron": "^34.2.0"
   },
   "dependencies": {
     "electron-squirrel-startup": "^1.0.1"

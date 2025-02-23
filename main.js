@@ -85,3 +85,19 @@ app.on('window-all-closed', () => {
         app.quit();
     }
 });
+
+if (require('electron-squirrel-startup')) {
+    app.quit();
+  }
+  
+  const { createShortcut } = require('electron-squirrel-startup');
+  
+  app.on('ready', () => {
+    if (process.argv.includes('--squirrel-firstrun')) {
+      createShortcut({
+        target: process.execPath,
+        name: '视频播放器',
+        description: '视频播放器'
+      });
+    }
+  });
