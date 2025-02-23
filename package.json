@@ -30,7 +30,11 @@
     "win": {
       "target": "nsis", 
       "icon": "icon.ico" 
-    }
+    },
+    "files": [
+      "**/*",
+      "!node_modules/{*.ts,*.map}" 
+    ]
   },
   "devDependencies": {
     "@electron-forge/cli": "^7.7.0",
